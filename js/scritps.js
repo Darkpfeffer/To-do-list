@@ -9,6 +9,16 @@ function newItem() {
     } else {
         $('#list').append(li)
     }
+    // Adding the delete button "X"
+    let crossOutButton= $('<button></button>');
+    crossOutButton.text('X');
+    li.append(crossOutButton);
+
+    function deleteListItem() {
+        li.addClass('delete');
+    };
+
+    crossOutButton.on('click', deleteListItem);
 
     // Crossing out an item from the list
     function crossOut() {
