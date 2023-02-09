@@ -8,6 +8,8 @@ function newItem() {
         window.alert("You must write something!");
     } else {
         $('#list').append(li)
+        $('#input').val('')
+
     }
     // Adding the delete button "X"
     let crossOutButton= $('<button></button>');
