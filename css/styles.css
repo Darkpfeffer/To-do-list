@@ -35,7 +35,10 @@ padding: 5px 15px;
 cursor: pointer;
 opacity: .8;}
 
-ol {padding-left: 20px;}
+ol {
+    padding-left: 20px;
+    list-style-type: none;
+}
 
 ol li {padding: 5px;color:#000;}
 

@@ -26,4 +26,7 @@ function newItem() {
     }
 
     li.on('dblclick', crossOut);
+
+    // Reordering the items
+    $('#list').sortable();
 }
