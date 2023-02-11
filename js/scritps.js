@@ -32,3 +32,10 @@ function newItem() {
     // Reordering the items
     $('#list').sortable();
 }
+
+$('#input').on('keypress', (event) => {
+    if (event.key=== 'Enter'/* && inputValue!== '' */) {
+        event.preventDefault();
+        newItem();
+    }
+});
