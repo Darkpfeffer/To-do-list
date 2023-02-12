@@ -33,8 +33,10 @@ function newItem() {
     $('#list').sortable();
 }
 
+// Add content when 'Enter' is pressed
+
 $('#input').on('keypress', (event) => {
-    if (event.key=== 'Enter'/* && inputValue!== '' */) {
+    if (event.key=== 'Enter') {
         event.preventDefault();
         newItem();
     }

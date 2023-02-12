@@ -1,3 +1,5 @@
+/* Default styles */
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
 
 body {
@@ -21,11 +23,7 @@ input{
 padding: 4px 15px 4px 5px;
 }
 
-/* button {
-	display: inline;
-	margin-left: 10px;
-} */
-
+/* Style of the 'Add' button */
 #button{
 display: inline-block;
 background-color:#fc999b;
@@ -40,6 +38,7 @@ padding: 5px 15px;
 cursor: pointer;
 opacity: .8;}
 
+/* Styles of the list items */
 ol {
     padding-left: 20px;
     list-style-type: none;
@@ -59,6 +58,7 @@ li:hover{
 	display: none;
 }
 
+/* Style of the delete button */
 li > button {
 	background: none;
 	border: none;
