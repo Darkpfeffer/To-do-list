@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+
 function newItem() {
     // Adding a new item to the list
     let li= $('<li></li>');
@@ -5,7 +7,7 @@ function newItem() {
     li.append(inputValue);
 
     if ($('#input').val()=== '') {
-        window.alert("You must write something!");
+        window.alert('You must write something!');
     } else {
         $('#list').append(li)
         $('#input').val('')
@@ -18,7 +20,7 @@ function newItem() {
 
     function deleteListItem() {
         li.addClass('delete');
-    };
+    }
 
     crossOutButton.on('click', deleteListItem);
 
